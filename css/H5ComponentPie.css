@@ -1,0 +1,19 @@
+/* 饼状图基本样式 */
+.h5_component_pie canvas{
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+}
+.h5_component_pie .name{
+	position:absolute;
+	font-size:12px;
+	width:60px;
+	height:25px;
+	z-index:20;
+	opacity:0;
+	-webkit-transition:all 1s;
+	text-align:center;
+	font-family:arial;
+}

@@ -1,0 +1,55 @@
+/* 柱状图样式 */
+.h5_component_bar{
+
+}
+.h5_component_bar .line{
+	height:15px;
+	line-height:15px;
+	font-size:12px;
+	margin-bottom:15px;
+}
+.h5_component_bar .line .name{
+	width:60px;
+	float:left;
+	color:#000;
+	text-align:center;
+	font-family:arial;
+}
+.h5_component_bar .line .rate{
+	float:left;
+	margin-left:10px;
+	height:15px;
+	position:relative;
+}
+.h5_component_bar .line .rate .background{
+	background-color:#99c0ff;
+	width:0%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	border-radius:2px;
+}
+.h5_component_bar .line .per{
+	height:15px;
+	color:black;
+	float:left;
+	margin-left:5px;
+	opacity:0;
+	font-family:arial;
+}
+.h5_component_bar_load .line .per{
+	opacity:1;
+	transition:all 1s 1.5s;
+}
+.h5_component_bar_leave .line .per{
+	opacity:0;
+}
+
+.h5_component_bar_load .line .rate .background{
+	width:100%;
+	-webkit-transition:all 1s 0.5s;
+}
+.h5_component_bar_leave .line .rate .background{
+	width:0%;
+}

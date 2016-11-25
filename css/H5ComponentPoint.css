@@ -1,0 +1,34 @@
+/* 散点图样式 */
+.h5_component_point .point{
+	display:block;
+	background-color:black;
+	position:absolute;
+	border-radius:50%;
+	color:#fff;
+	-webkit-opacity:0; 
+	-webkit-transition:all 1s;
+	-webkit-transform:scale(.1);
+}
+.h5_component_point .point .name{
+	height:30px;
+	width:100%;
+	font-size:22px;
+	text-align:center;
+	position:absolute;
+	top:50%;
+	margin-top:-15px;
+}
+.h5_component_point .point .per{
+	font-size:0.5em;
+	font-family:arial;
+}
+.h5_page .h5_component_point_load .point{
+	-webkit-opacity:1;
+	-webkit-transform:scale(1);
+}
+.h5_page .h5_component_point_leave .point{
+	-webkit-opacity:0;
+	-webkit-transform:scale(.1);
+}
+
+

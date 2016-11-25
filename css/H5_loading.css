@@ -1,0 +1,55 @@
+/* loading动画样式 */
+body{
+	position:fixed;
+	width:100%;
+	height:100%;
+}
+.loading{
+	width:60px;
+	height:60px;
+	position:relative;
+	margin:-30px auto;
+	top:50%;
+}
+.double-bounce1,.double-bounce2{
+	width:100%;
+	height:100%;
+	border-radius:50%;
+	position:absolute;
+	background-color:#0062e0;
+	top:0;
+	left:0;
+	opacity:0.6;
+}
+.loading #rate{
+	width:100%;
+	height:20px;
+	position:absolute;
+	top:100%;
+	line-height:20px;
+	text-align:center;
+	color:#0062e0;
+	font-family:arial;
+}
+.double-bounce1{
+	-webkit-animation:bounce1 2s ease-in-out 0s infinite;
+}
+.double-bounce2{
+	-webkit-animation:bounce2 2s ease-in-out 0s infinite;
+}
+@-webkit-keyframes bounce1{
+	0%,100%{
+		transform:scale(0);
+	}
+	50%{
+		transform:scale(1);
+	}
+}
+@-webkit-keyframes bounce2{
+	0%,100%{
+		transform:scale(1);
+	}
+	50%{
+		transform:scale(0);
+	}
+}
